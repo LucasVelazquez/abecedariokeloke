@@ -31,6 +31,8 @@ body {
 
 #header {
   text-align: center;
+  font-family: "child-font";
+  color: #a171fd;
 }
 
 #image {
@@ -41,10 +43,12 @@ body {
 }
 
 #title {
-  font-family: "child-font";
   font-size: 35px;
-  color: #a171fd;
   margin: 17px 0;
+}
+
+#subtitle {
+  font-size: 16px;
 }
 
 .letter {
