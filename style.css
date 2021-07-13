@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "child-font";
+  src: url("./src/font/LapsusPro-Bold.otf");
+}
+
+body {
+  background-color: #fce6ff;
+}
+
+#loading {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #fce6ff;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+#loading-text {
+  font-size: 30px;
+  text-align: center;
+  font-family: "child-font";
+  color: #a171fd;
+}
+
+#letters-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#header {
+  text-align: center;
+}
+
+#image {
+  width: 12%;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+#title {
+  font-family: "child-font";
+  font-size: 35px;
+  color: #a171fd;
+  margin: 17px 0;
+}
+
+.letter {
+  font-family: "child-font";
+  font-size: 130px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.letter:hover {
+  transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 600px) {
+  #image {
+    width: 30%;
+  }
+
+  #title {
+    font-size: 25px;
+  }
+
+  .letter {
+    font-size: 50px;
+  }
+
+  .letter:hover {
+    transform: none;
+  }
+
+  #letters-container {
+    width: 80%;
+  }
+}
+
+.red {
+  color: #f44d5e;
+}
+
+.blue {
+  color: #4e8bfe;
+}
+
+.green {
+  color: #a1c002;
+}
+
+.yellow {
+  color: #f6d401;
+}
