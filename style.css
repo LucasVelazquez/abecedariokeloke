@@ -64,6 +64,12 @@ body {
   transform: translateY(-8px);
 }
 
+#cafecito-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 @media only screen and (max-width: 600px) {
   #image {
     width: 30%;
@@ -83,6 +89,10 @@ body {
 
   #letters-container {
     width: 80%;
+  }
+
+  #cafecito-button {
+    position: initial;
   }
 }
 
