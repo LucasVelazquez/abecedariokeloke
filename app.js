@@ -46,5 +46,22 @@ function playAdvice() {
     advice.play();
 }
 
+function fixIndex(keyCode){
+    if(keyCode === 192) 
+        return 14;
+    let index = keyCode - 65;
+    if(index > 13) 
+        index++;
+    return index;
+}
+
 window.addEventListener('load', pageLoaded);
 
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    let keyCode = evt.keyCode;
+    if ((keyCode < 65 || keyCode > 90) && keyCode !== 192) return false;
+    let index = fixIndex(keyCode);
+    let letter = letters[index];
+    playSound(letter)
+};
