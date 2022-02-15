@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
 }
 
-#header {
+#content {
   text-align: center;
   font-family: "child-font";
   color: #a171fd;
@@ -65,9 +65,25 @@ body {
 }
 
 #cafecito-button {
-  position: absolute;
+  display: inline-block;
   top: 20px;
   left: 20px;
+  background-color: #02a59a;
+  color: white;
+  padding: 0.4rem 0.4rem;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+}
+
+#cafecito-button img {
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#cafecito-button span {
+  margin-left: 3px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -91,8 +107,8 @@ body {
     width: 80%;
   }
 
-  #cafecito-button {
-    position: initial;
+  #header {
+    text-align: center;
   }
 }
 

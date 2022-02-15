@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abecedario keloke</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNB3WBFFPG"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-RNB3WBFFPG');
+      gtag("config", "G-RNB3WBFFPG");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="loading">
-        <p id="loading-text">Cargando...</p>
+      <p id="loading-text">Cargando...</p>
     </div>
-    <div id="header">
-        <div>
-            <a id="cafecito-button" href='https://cafecito.app/lucasvelazquez' rel='noopener' target='_blank'><img
-                    srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x'
-                    src='https://cdn.cafecito.app/imgs/buttons/button_6.png'
-                    alt='Invitame un café en cafecito.app' /></a>
-        </div>
-        <img id="image" onclick="playAdvice()" src="./src/img/lgante.png" alt="">
+    <div>
+      <div id="header">
+        <a id="cafecito-button" href="https://crypto-coffee.xyz/donate/criticus-dev" rel="noopener" target="_blank">
+          <img src="./src/img/logo.png" alt="" />
+          <span>Invitame un CryptoCoffee</span>
+        </a>
+      </div>
+      <div id="content">
+        <img id="image" onclick="playAdvice()" src="./src/img/lgante.png" alt="" />
         <p id="title">Aprende el abecedario con L-Gante</p>
         <p id="subtitle">(Presione en las letras para oir su correcta pronunciación)</p>
+      </div>
     </div>
     <div id="letters-container"></div>
-</body>
-
+  </body>
 </html>
