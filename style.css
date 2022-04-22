@@ -85,6 +85,19 @@ body {
   font-size: 13px;
 }
 
+#link {
+  position: absolute;
+  right: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #a171fd;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#link > a {
+  color: #f44d5e;
+}
+
 @media only screen and (max-width: 600px) {
   #image {
     width: 30%;
@@ -108,6 +121,11 @@ body {
 
   #header {
     text-align: center;
+  }
+
+  #link {
+    position: revert;
+    display: block;
   }
 }
 
